@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CR7</title>
+</head>
+<style>
+    .abcd {
+        border: 15px solid darkred;
+        width: auto;
+        margin: 40px;
+        background-color: crimson;
+        padding: 40px;}
+    .textcenter {text-align: center;}
+
+    .sigma {
+        width: 2200px;
+        height: auto;
+        padding: 40px;
+        border: 15px solid darkred;
+        margin: 0 auto;    }
+    .font {font-family: 'Courier New', Courier, monospace;}
+    .text {font-size: 30px;}
+    .headline 
+    {font-size: 60px;
+    text-align: center;}
+    .dark-mode {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+        #darkModeToggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #darkModeToggle:hover {
+            background-color: crimson;
+        }
+</style>
+<body>
+<div class="abcd">
+    <h1 class="headline">Cristiano Ronaldo</h1>
+    <p class="textcenter">Kõige parem jalgpallur maailmas</p>
+    </div>
+    <div class="sigma">
+        <h2 class="headline">Saavutused</h2>
+        <p class="text"> •Cristiano Ronaldo on võitnud viis Ballon d'Ori.</p>
+        <p class="text"> • Ta on ainus mängija, kes on löönud üle 900 värava ametlikes mängudes.</p>
+        <p class="text"> • Ronaldo on UEFA Meistrite Liiga ajaloo parim väravalööja.</p>
+        <p class="text"> • Ta on ainus mängija, kes on võitnud Inglismaa, Hispaania ja Itaalia liiga tiitlid.</p>
+        <p class="text"> • Portugali koondise eest on ta löönud kõige rohkem väravaid ajaloos.</p>
+        <p class="text"> • Ta on ainus mängija, kes on löönud väravaid viiel erineval MM'il.</p>
+        <p class="text"> • Ronaldo on võitnud Euroopa meistrivõistlused ja Rahvuste Liiga Portugaliga.</p>
+        <p class="text"> • Ta on löönud üle 140 värava UEFA Meistrite Liigas.</p>
+        <p class="text"> • Ronaldo on olnud oma karjääri jooksul kuue erineva liiga parim väravalööja.</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+     <script>
+            const toggleButton = document.getElementById("darkModeToggle");
+            toggleButton.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+            });
+        </script>
+        
+    
+</body>
+
+</html>
